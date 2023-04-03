@@ -1,6 +1,6 @@
 const fs = require('fs');
 let input = fs.readFileSync('./1568/input.txt').toString();
-
+//BOJ 체점시 input 파일 경로는 /dev/stdin으로 변경해주어야 한다.
 let n = +input;
 let answer = 0;
 let k = 1;
