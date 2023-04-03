@@ -1,0 +1,18 @@
+{
+  "name": "boj_nodejs",
+  "description": "BOJ 문제 Node.js로 풀어보기",
+  "version": "1.0.0",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "private": true,
+  "scripts": {
+    "test": "node ./1568/solution.js "
+  },
+  "license": "MIT",
+  "author": {
+    "name": "임연철",
+    "email": "dladuscjf8@gmail.com",
+    "url": "https://github.com/leongcrab"
+  }
+}
