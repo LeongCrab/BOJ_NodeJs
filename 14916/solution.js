@@ -1,5 +1,5 @@
 const fs = require('fs');
-let input = fs.readFileSync('./14916/input.txt').toString();
+let input = fs.readFileSync('./14916/input.txt').toString().trim();
 
 const n = +input;
 const dp = new Array(n + 1).fill(Infinity);
