@@ -8,7 +8,6 @@ dp[1] = 1;
 if (n >= 0) {
     for (let i = 2; i < n + 1; i++) {
         dp[i] = (dp[i - 1] + dp[i - 2]) % MOD;
-
     }
 } else {
     for (let i = 2; i < Math.abs(n) + 1; i++) {
