@@ -4,7 +4,10 @@
 template 폴더를 복사하여 문제 번호로 바꾸고 풀이 시작하자.
 
 ## 작성한 코드를 콘솔에서 테스트
-package.json-scripts-test에서 해당 문제의 경로로 변경하고, terminal에서 yarn test 명령어로 실행하면 된다. <br>
+package.json-scripts-test에서 해당 문제의 폴더로 경로를 변경하고, terminal에서 아래의 명령어로 실행한다.
+```
+yarn test
+```
 추후에 방법 변경 예정.
 
 ## 커밋 가이드
