@@ -7,12 +7,11 @@ for (const input of inputs) {
 	graph[a].push(b);
 }
 
-function dfs(start) {
-	visited[start] = true;
+const dfs = (start, visited) => {
 	for (const node of graph[start]) {
-		if (!visited[node]) {
-			dfs(node);
-			cnt += 1;
+		if (!visited.includes(node)) {
+			visited.push(node);
+			dfs(node, visited);
 		}
 	}
 }
@@ -20,9 +19,10 @@ function dfs(start) {
 let max = -1;
 let answer = [];
 for (let i = 1; i < n + 1; i++) {
-	cnt = 0;
-	visited = new Array(n + 1).fill(false);
-	dfs(i);
+	const visited = [];
+	visited.push(i);
+	dfs(i, visited);
+	const cnt = visited.length;
 	if (max < cnt) {
 		answer = [i];
 		max = cnt;
