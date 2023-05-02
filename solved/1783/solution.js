@@ -5,7 +5,7 @@ let answer = -1;
 if (n == 1) {
 	answer = 1;
 } else if (n == 2) {
-	answer = Math.min(4, Math.floor((m + 1) / 2));
+	answer = Math.min(4, Math.floor((m - 1) / 2) + 1);
 } else if (m < 7) {
 	answer = Math.min(4, m);
 } else {
