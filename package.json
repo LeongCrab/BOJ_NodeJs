@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "test": "node ./1267/solution.js"
+    "test": "node ./18352/solution.js"
   },
   "license": "MIT",
   "author": {
